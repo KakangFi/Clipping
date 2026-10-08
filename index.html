@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070812"><title>ClipForge Lite</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="grid"></div><main>
+<header><b>✦ CLIP<span>FORGE LITE</span></b><i>LOW RAM MODE</i></header>
+<section class="hero"><small>LIGHTWEIGHT VIDEO CLIPPER</small><h1>Clip panjang.<br><em>Lebih ringan.</em></h1><p>Memotong video langsung dari browser tanpa FFmpeg/WebAssembly besar. Tetap ringan, dengan perekaman yang dibuat lebih halus.</p></section>
+<section class="box">
+<div id="drop" class="drop"><input id="file" type="file" accept="video/*"><div class="ico">↥</div><h2>Pilih video</h2><p>Video tetap di perangkatmu.</p><button id="pick">PILIH VIDEO</button><small>Disarankan MP4/H.264 · Chrome/Android</small></div>
+<div id="work" class="hide"><div class="head"><div><b id="name"></b><small id="meta"></small></div><button id="change">GANTI</button></div><video id="vid" controls playsinline></video>
+<div class="controls"><label>Durasi clip<select id="dur"><option value="15">15 detik</option><option value="30" selected>30 detik</option><option value="45">45 detik</option><option value="60">60 detik</option></select></label><label>Jumlah clip<input id="count" type="number" min="1" max="10" value="5"></label><label>Penempatan<select id="mode"><option value="spread">Sebar</option><option value="start">Dari awal</option><option value="random">Acak</option></select></label></div>
+<div class="tip">⚡ <span>Mode hemat RAM: tanpa FFmpeg/WASM. Timing berbasis frame + bitrate adaptif membantu hasil lebih smooth.</span></div>
+<button id="go" class="generate">GENERATE CLIPS →</button>
+<div id="prog" class="hide"><div class="bar"><span id="bar"></span></div><p><span id="label">Menyiapkan…</span><span id="pct">0%</span></p></div></div></section>
+<section id="results" class="box hide"><div class="reshead"><h2>Hasil clip</h2><button id="all">DOWNLOAD SEMUA</button></div><div id="cards"></div></section>
+<footer>CLIPFORGE LITE · LOCAL PROCESSING</footer></main><script src="app.js"></script></body></html>
